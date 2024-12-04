@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>GrapesJS MJML Plugin</title>
+  <title>MJML Editor</title>
   <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
   <script src="https://unpkg.com/grapesjs"></script>
   <style>
@@ -32,117 +32,183 @@
 <body>
 
   <div id="gjs" style="height:0px; overflow:hidden">
-    <mjml>
+    <!-- START MJML -->
+    <mjml lang="en">
       <mj-head>
-        <mj-font name="Barlow" href="https://fonts.googleapis.com/css?family=Barlow"></mj-font>
-
+        <mj-title>
+          Subject - Base EDM Pfizer
+        </mj-title>
+        <mj-preview>
+          Preheader - Base EDM layout include header and footer
+          &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        </mj-preview>
+        <mj-attributes>
+          <mj-all font-family="Arial,'Helvetica Neue',Helvetica,sans-serif">
+          </mj-all>
+          <mj-text font-weight="400" font-size="12px" line-height="20px" color="#4c5459" font-family="Arial,'Helvetica Neue',Helvetica,sans-serif">
+          </mj-text>
+        </mj-attributes>
+        <mj-style inline="inline">
+          a {
+          color: #4c5459;
+          text-decoration: underline;
+          }
+          p {
+          margin:0;
+          text-wrap: pretty;
+          }
+          .blue-lg-link a{
+          font-weight: 700;
+          color: #4f5cd6 !important;
+          }
+          .blue-dk-link a{
+          font-weight: 700;
+          color: #3c3d91 !important;
+          }
+          .top-link {
+          font-size: 12px;
+          line-height: 18px;
+          color: #011c26;
+          font-weight: 700;
+          text-decoration: underline;
+          }
+          .hide {
+          display: none;
+          }
+        </mj-style>
         <mj-style>
-          .slogan {
-            background: #000;
+          @media (max-width: 599px) {
+          .col-stack {
+          width: 100%;
+          display: block !important;
+          margin: 0 auto;
+          }
+          .nav-col-stack {
+          width: 100%;
+          display: block;
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+          }
           }
         </mj-style>
       </mj-head>
-      <mj-body>
-        <!-- Company Header -->
-        <mj-section background-color="#f0f0f0">
-          <mj-column border="10px solid #F45E43">
-            <mj-text font-family="Barlow">A first line of text</mj-text>
-            <mj-spacer height="50px" />
-          </mj-column>
-        </mj-section>
-
-        <!-- Image Header -->
-        <mj-section background-url="http://1.bp.blogspot.com/-TPrfhxbYpDY/Uh3Refzk02I/AAAAAAAALw8/5sUJ0UUGYuw/s1600/New+York+in+The+1960's+-+70's+(2).jpg"
-          background-size="cover" background-repeat="no-repeat">
+      <mj-body background-color="#ffffff">
+        <!-- Top Content -->
+        <mj-section background-color="#ffffff" padding="4px 5px 18px 5px">
           <mj-column>
-            <mj-text css-class="slogan" align="center" color="#fff" font-size="40px" font-family="Helvetica Neue">Slogan here</mj-text>
-            <mj-button background-color="#F63A4D" href="#">
-              Promotion
-            </mj-button>
-          </mj-column>
-        </mj-section>
-
-        <!-- Intro text -->
-        <mj-wrapper background-color="#ffe9f7" padding="10px">
-          <mj-section background-color="#eaeffa">
-            <mj-group background-color="#fffadd">
-              <mj-column>
-                <mj-text font-style="italic" font-size="20px" font-family="Helvetica Neue" color="#626262">My Awesome Text</mj-text>
-                <mj-text color="#525252">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum enim eget magna efficitur, eu semper augue semper.
-                  Aliquam erat volutpat. Cras id dui lectus. Vestibulum sed finibus lectus, sit amet suscipit nibh. Proin nec
-                  commodo purus. Sed eget nulla elit. Nulla aliquet mollis faucibus.
-                </mj-text>
-                <mj-button background-color="#F45E43" href="#">Learn more</mj-button>
-              </mj-column>
-            </mj-group>
-          </mj-section>
-        </mj-wrapper>
-
-        <!-- Side image -->
-        <mj-section background-color="white">
-          <mj-column>
-            <mj-image width="200px" src="https://designspell.files.wordpress.com/2012/01/sciolino-paris-bw.jpg" />
-          </mj-column>
-          <mj-column>
-            <mj-text font-style="italic" font-size="20px" font-family="Helvetica Neue" color="#626262">
-              Find amazing places ...
-            </mj-text>
-            <mj-text color="#525252">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum enim eget magna efficitur, eu semper augue semper.
-              Aliquam erat volutpat. Cras id dui lectus. Vestibulum sed finibus lectus.</mj-text>
-          </mj-column>
-        </mj-section>
-        <mj-section>
-          <mj-column>
-            <mj-text font-style="italic" font-size="20px" font-family="Helvetica Neue" color="#626262" align="center">
-              ... with real-life images
+            <mj-text align="center" padding="0px">
+              <a href="#" target="_blank" class="top-link">View in Browser</a>
             </mj-text>
           </mj-column>
         </mj-section>
-        <mj-raw>
-          <div class="container">
-            <img class="item" src="https://source.unsplash.com/random/200x141?random" alt="Example image">
-            <img class="item" src="https://source.unsplash.com/random/200x142?random" alt="Example image">
-            <img class="item" src="https://source.unsplash.com/random/200x143?random" alt="Example image">
-            <img class="item" src="https://source.unsplash.com/random/200x144?random" alt="Example image">
-            <img class="item" src="https://source.unsplash.com/random/200x145?random" alt="Example image">
-            <img class="item" src="https://source.unsplash.com/random/200x146?random" alt="Example image">
-          </div>
-        </mj-raw>
-        <!-- Icons -->
-        <mj-section background-color="#fbfbfb">
+        <!-- Divider -->
+        <mj-section background-color="#ffffff" padding="0px">
           <mj-column>
-            <mj-image width="100px" src="http://191n.mj.am/img/191n/3s/x0l.png" />
-          </mj-column>
-          <mj-column>
-            <mj-image width="100px" src="http://191n.mj.am/img/191n/3s/x01.png" />
-          </mj-column>
-          <mj-column>
-            <mj-image width="100px" src="http://191n.mj.am/img/191n/3s/x0s.png" />
+            <mj-divider padding="0px" border-width="10px" border-color="#0095ff">
+            </mj-divider>
           </mj-column>
         </mj-section>
-
-        <!-- Footer -->
-        <mj-section background-color="#e7e7e7">
+        <!-- Header -->
+        <mj-section background-color="#ffffff" padding="0px 0px 20px 0px">
+          <mj-column width="250px" padding="6px 0px 0px 0px">
+            <mj-image src="https://canvas.pfizer.com/image/attachments/22c55098-f6af-4882-b753-c094d9e38345/preview/preview.png?w=300&hash=f08f35fffa1e3812bbffbe5b174a7d5f&h=295&fit=max&s=a86e711b96cafd9aee51fa4d3187e3bd" width="100px" alt="Pfizer" padding="0px" href="https://www.pfizer.com.au/?{{my.link}}{{my.account_token}}{{lead.Pfizer%20Customer%20ID}}&LNK=AUPH2-IG" target="_blank">
+            </mj-image>
+          </mj-column>
+          <mj-column width="350px" padding="3px 0px 0px 0px">
+            <mj-navbar css-class="col-stack">
+              <mj-navbar-link css-class="nav-col-stack" padding="20px 12px 0px 12px" color="#011c26" font-size="12px" line-height="14px" font-weight="700" text-transform="none" href="https://www.pfizer.com.au/?{{my.link}}{{my.account_token}}{{lead.Pfizer%20Customer%20ID}}=&LNK=AUPH2-C1" target="_blank">pfizer.com.au
+              </mj-navbar-link>
+              <mj-navbar-link css-class="nav-col-stack" padding="20px 12px 0px 12px" color="#011c26" font-size="12px" line-height="14px" font-weight="700" text-transform="none" href="tel:1800675229" target="_blank">1800 675 229
+              </mj-navbar-link>
+              <mj-navbar-link css-class="nav-col-stack" padding="20px 12px 0px 12px" color="#011c26" font-size="12px" line-height="14px" font-weight="700" text-transform="none" href="https://pmiform.com/AU?{{my.link}}{{my.account_token}}{{lead.Pfizer%20Customer%20ID}}=&LNK=AUPH2-C2" target="_blank">Send Medical Enquiry
+              </mj-navbar-link>
+            </mj-navbar>
+          </mj-column>
+        </mj-section>
+        <!-- Hero -->
+        <mj-section background-color="#ffffff" padding="0px">
           <mj-column>
-            <mj-button href="#">Hello There!</mj-button>
-            <mj-social font-size="15px" icon-size="30px" mode="horizontal">
-              <mj-social-element name="facebook" href="https://mjml.io/">
-                Facebook
-              </mj-social-element>
-              <mj-social-element name="google" href="https://mjml.io/">
-                Google
-              </mj-social-element>
-              <mj-social-element name="twitter" href="https://mjml.io/">
-                Twitter
-              </mj-social-element>
-            </mj-social>
+            <mj-image src="https://canvas.pfizer.com/image/attachments/376499e0-19b6-4d81-835b-af13bd336e0c/source/paxlovidh23-hero-banner.png?fit=contain&w=1200&s=699e983afa35640f5f43d06d5885e9f9" width="600px" alt="PAXLOVID" padding="0px" padding-right="0px" padding-left="0px">
+            </mj-image>
+          </mj-column>
+        </mj-section>
+        <!-- Content 1 -->
+        <mj-section background-color="#ffffff" padding="10px 35px 20px 35px">
+          <mj-column>
+            <mj-text padding="3px 0px" font-size="14px" line-height="20px">
+              PAXLOVID (nirmatrelvir/ritonavir) is the 
+              <span style="color:#e01b83;"><b>first-line oral COVID-19 antiviral unless 
+                contraindicated,
+                </b></span> as required by PBS criteria.
+              <sup style="line-height:0;font-size:8px;vertical-align:5px;">1–3</sup>
+            </mj-text>
+            <mj-text padding="3px 0px" font-size="14px" line-height="20px">
+              With simple medication management, PAXLOVID may be prescribed to patients
+              receiving commonly prescribed medications such as statins or anticoagulants, or who
+              have mild-to-moderate renal impairment.
+              <sup style="line-height:0;font-size:8px;vertical-align:5px;">4</sup>
+            </mj-text>
+            <mj-text padding="3px 0px" font-size="14px" line-height="20px">
+              Learn the strategies and considerations for prescribing PAXLOVID with this series
+              of bite-sized, 2-minute video guides by Prof. Saye Khoo, Programme Director for the
+              University of Liverpool COVID-19 Drug Interaction Checker.
+            </mj-text>
           </mj-column>
         </mj-section>
         <!-- Footer -->
+        <mj-section background-color="#0095ff" text-align="left" padding="0px">
+          <mj-column css-class="col-stack" vertical-align="middle" width="200px" padding="20px">
+            <mj-image src="https://canvas.pfizer.com/image/attachments/5a754c7c-3808-4bc7-843d-aab66ca3200e/preview/preview.png?w=300&hash=da7379817c0a041a0283cb4b85e770e8&h=295&fit=max&s=fdcd8e903529d3b56140cc8569059feb" width="144px" alt="pfizer.com.au" padding="0px" href="https://www.pfizer.com.au/" target="_blank">
+            </mj-image>
+          </mj-column>
+          <mj-column css-class="col-stack" vertical-align="middle" width="100px" padding="15px 0px 10px 0px">
+            <mj-image src="https://canvas.pfizer.com/image/attachments/c1f39c56-3512-4915-b7a4-797bebdd4177/preview/preview.png?w=300&hash=fa648d7bc51e13576302c98c650ab0c2&h=295&fit=max&s=12a4aa12d75d67a79135761a7f7cd3d2" width="20px" alt="pfizer.com.au" padding="0 0 10px 0" href="#" target="_blank">
+              <mj-text align="center" padding="0px">
+                <a href="#" target="_blank" style="color:#ffffff;text-decoration:none;">Contact us</a>
+              </mj-text>
+            </mj-image>
+          </mj-column>
+          <mj-column css-class="col-stack" vertical-align="middle" width="100px" padding="15px 0px 10px 0px">
+            <mj-image src="https://canvas.pfizer.com/image/attachments/726c8215-546b-4f1f-a47a-03a827ffe5a0/preview/preview.png?w=300&hash=c030cc638cffe433e26314f13afaa2cc&h=295&fit=max&s=25a9bad02f6933f9d570a2ddb8974168" width="25px" alt="pfizer.com.au" padding="0 0 10px 0" href="#" target="_blank">
+              <mj-text align="center" padding="0px">
+                <a href="#" target="_blank" style="color:#ffffff;text-decoration:none;">Unsubscribe</a>
+              </mj-text>
+            </mj-image>
+          </mj-column>
+          <mj-column css-class="col-stack" vertical-align="middle" width="100px" padding="15px 0px 10px 0px">
+            <mj-image src="https://canvas.pfizer.com/image/attachments/6a5ee92a-c6e7-4c50-9ace-05a0b1b04630/preview/preview.png?w=300&hash=2ab3aaa6dc4182bcb389ebc743380678&h=295&fit=max&s=e6a37e3f659929fe654884a1d451c835" width="25px" alt="pfizer.com.au" padding="0 0 10px 0" href="#" target="_blank">
+              <mj-text align="center" padding="0px">
+                <a href="#" target="_blank" style="color:#ffffff;text-decoration:none;">pfizer.com.au</a>
+              </mj-text>
+            </mj-image>
+          </mj-column>
+          <mj-column css-class="col-stack" width="10px" padding="0px">
+            <mj-spacer padding="2px">
+            </mj-spacer>
+          </mj-column>
+        </mj-section>
+        <!-- Footer 2 -->
+        <mj-section background-color="#f2f2f2" padding="24px 25px 32px 25px">
+          <mj-column>
+            <mj-text padding="4px 0px 8px 0px" color="#797979" font-size="10px" line-height="14.5px">
+              <p>If you need to report an Adverse Event for Pfizer medicines do not reply to this email but contact Pfizer Drug Safety at 
+                <a href="mailto:AUS.AEReporting@pfizer.com" style="color:#797979;">AUS.AEReporting@pfizer.com</a>
+              </p>
+            </mj-text>
+            <mj-text padding="6px 0px" color="#797979" font-size="10px" line-height="14.5px">
+              LEGAL NOTICE - Unless expressly stated otherwise, this message is confidential and may be privileged. It is intended for the addressee(s) only. Access to this e-mail by anyone else is unauthorised. If you are not an addressee, any disclosure or copying of the contents of this e-mail or any action taken (or not taken) in reliance on it is unauthorised and may be unlawful. If you are not an addressee, please inform the sender immediately. Pfizer Australia has its registered office in Sydney, Australia.
+            </mj-text>
+            <mj-text padding="6px 0px 1px 0px" color="#797979" font-size="10px" line-height="14.5px">          
+              Pfizer Australia Pty Ltd, Sydney, Australia. Medical Information: 1800 675 229.
+            </mj-text>
+            <mj-text padding="1px 0px 8px 0px" color="#797979" font-size="10px" line-height="14.5px">          
+              PP-XEL-AUS-0742. PFI5010. 01/24.
+            </mj-text>
+          </mj-column>
+        </mj-section>
       </mj-body>
     </mjml>
+    <!-- END MJML -->
   </div>
 
 
